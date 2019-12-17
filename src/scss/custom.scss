@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
 .deliveryTitle {
-    color: #91c03e
+    color: #91c03e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+.caroselImg {
+    width: 50%;
 }
