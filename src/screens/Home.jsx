@@ -1,8 +1,8 @@
-import React from 'react'
-import Component from 'react-router-dom'
-import Carousel from './Carousel'
+import { React, Component } from 'react'
+import CarouselContainer from './Carousel'
 import Layout from '../styles/Layout'
 import Footer from './Footer'
+import Figures from './Figures'
 
 class Home extends Component {
     constructor(){
@@ -17,7 +17,8 @@ class Home extends Component {
             <Layout>
                 {/* <Header>
                 </Header> */}
-                <Carousel/>
+                <CarouselContainer />
+                <Figures/>
                 <Footer/>
             </Layout>
         )
