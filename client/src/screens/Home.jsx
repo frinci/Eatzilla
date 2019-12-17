@@ -15,6 +15,7 @@ class Home extends Component {
                 <Header>
 
                 </Header>
+                <Footer/>
             </Layout>
         )
     }
