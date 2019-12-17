@@ -11,7 +11,8 @@
 }
 
 .caroselImg {
-    width: 50%;
+    // width: 50%;
+    height: 114px
 }
 
 .carouselDivider {
@@ -29,3 +30,28 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 600
 }
+
+.figures{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+ .card {
+     margin: 10px;
+     position: relative;
+    width: 40%;
+     .card-text {
+     position: absolute;
+     background-color: #91c03e;
+     color: white;
+     font-size: 200%;
+    }
+ }
+
+ .right {
+     width: 40%;
+    .card-text {
+        right: 0;
+    }
+ }
