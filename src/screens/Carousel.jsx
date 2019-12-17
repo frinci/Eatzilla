@@ -4,18 +4,25 @@ import costco from '../images/costco.png'
 import Keyfood from '../images/Keyfood.png'
 import weis from '../images/weis.png'
 import wholefoods from '../images/wholefoods.png'
-// import '../scss/custom.scss'
+import stopnshop from '../images/stopnshop.png'
 
 const CarouselContainer = () => {
   return (
 
     <div className='deliveryPartners'>
       <Carousel>
-        <h3 className='deliveryTitle'>Delivery Partners</h3>
+        <h3 className='deliveryTitle'>DELIVERY PARTNERS</h3>
+        <Carousel.Item>
+          <img
+            className="caroselImg"
+            src={stopnshop}
+            alt="stop and shop logo"
+          />
+        </Carousel.Item>
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="caroselImg"
             src={costco}
             alt="costco logo"
           />
@@ -23,7 +30,7 @@ const CarouselContainer = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="caroselImg"
             src={Keyfood}
             alt="keyfoods logo"
           />
@@ -31,7 +38,7 @@ const CarouselContainer = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="caroselImg"
             src={weis}
             alt="weis logo"
           />
@@ -39,7 +46,7 @@ const CarouselContainer = () => {
 
         <Carousel.Item>
           <img
-            className="d-block w-100"
+            className="caroselImg"
             src={wholefoods}
             alt="wholefoods logo"
           />
