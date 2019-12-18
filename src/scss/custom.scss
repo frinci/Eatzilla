@@ -37,7 +37,7 @@
     margin: auto;
 }
 
- .card {
+.card {
      margin: 10px;
      position: relative;
     width: 40%;
@@ -47,17 +47,32 @@
      color: white;
      font-size: 200%;
     }
- }
+}
 
- .right {
-     width: 40%;
+.right {
+    width: 40%;
     .card-text {
         right: 0;
     }
- }
+}
+     
+ .top{
+     width: 100vw;
+     position: relative;
+     .card-imgtop{
+     width: 100vw; 
+    }
+    .card-texttop {
+        position: absolute;
+        color: white;
+        font-size: 400%;
+        align-self: center;
+        margin: 6em;
+    }
+}
 
- @media(min-width: 750px) {
-     .deliveryPartners {
-         display: none;
-     }
- }
+@media(min-width: 750px) {
+    .deliveryPartners {
+        display: none;
+    }
+}
