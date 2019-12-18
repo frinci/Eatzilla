@@ -34,10 +34,10 @@
 .figures{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
 }
 
- .card {
+.card {
      margin: 10px;
      position: relative;
     width: 40%;
@@ -47,10 +47,14 @@
      color: white;
      font-size: 200%;
     }
- }
+    .card-img{
+        width: 100%;
+        height: 100%;
+    }
+}
 
- .right {
-     width: 40%;
+.right {
+    width: 40%;
     .card-text {
         right: 0;
     }
@@ -59,3 +63,35 @@
  .logInButton {
      border: 0;
  }
+}
+     
+ .top{
+     width: 100vw;
+     position: relative;
+     .card-imgtop{
+     width: 100vw; 
+    }
+    .card-texttop {
+        position: absolute;
+        color: white;
+        font-size: 400%;
+        align-self: center;
+        margin: 6em;
+    }
+}
+
+@media(min-width: 750px) {
+    .deliveryPartners {
+        display: none;
+    }
+}
+@media(max-width: 420px){
+    .figures{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100vw;
+        margin: auto;
+    }
+}

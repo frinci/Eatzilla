@@ -5,6 +5,7 @@ import veggiefriendly from '../images/veggieFriendly.jpeg'
 import allRecipes from '../images/allrecipes.jpeg'
 import giveUsATry from '../images/GiveUsaTryGroup.png'
 import becomeMember from '../images/becomememberdesktop.jpeg'
+import getToday from '../images/header.jpeg'
 import Figure from 'react-bootstrap/Figure'
 
 
@@ -12,6 +13,18 @@ import Figure from 'react-bootstrap/Figure'
 const FiguresOne = () => {
     return (
         <div className='figures'>
+            <Figure className='card top'>
+                <Figure.Image className='card-imgtop'
+                    width={171}
+                 
+                    height={180}
+                    alt="gettoday"
+                    src={getToday}
+                />
+                <Figure.Caption className='card-texttop'>
+                   Get It Today
+  </Figure.Caption>
+  </Figure>
             <Figure className='card left'>
                 <Figure.Image className='card-img'
                     width={171}
