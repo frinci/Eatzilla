@@ -1,0 +1,22 @@
+h3 {
+    color: #91c03e;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+  }
+  
+  .responsiveDelivery {
+    margin-left: 15px;
+    margin-right: 15px; 
+    display: none;
+  }
+  
+  .responsiveImg {
+    height: 114px
+  }
+
+
+  @media(min-width: 750px) {
+    .responsiveDelivery {
+        display: inline-block;
+    }
+  }
