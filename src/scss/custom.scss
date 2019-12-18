@@ -54,3 +54,17 @@
         right: 0;
     }
  }
+ .top{
+     width: 100vw;
+     position: relative;
+     .card-imgtop{
+     width: 100vw; 
+     }
+     .card-texttop {
+        position: absolute;
+        color: white;
+        font-size: 400%;
+        align-self: center;
+        margin: 6em;
+       }
+ }
