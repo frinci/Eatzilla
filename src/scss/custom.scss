@@ -34,7 +34,7 @@
 .figures{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
 }
 
 .card {
@@ -46,6 +46,10 @@
      background-color: #91c03e;
      color: white;
      font-size: 200%;
+    }
+    .card-img{
+        width: 100%;
+        height: 100%;
     }
 }
 
@@ -74,5 +78,15 @@
 @media(min-width: 750px) {
     .deliveryPartners {
         display: none;
+    }
+}
+@media(max-width: 420px){
+    .figures{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 100vw;
+        margin: auto;
     }
 }
