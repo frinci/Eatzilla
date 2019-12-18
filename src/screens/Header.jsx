@@ -1,5 +1,6 @@
 import { MdSearch, } from 'react-icons/md'
 import { GiHamburgerMenu } from 'react-icons/gi'
+// import { MDBCol } from "mdbreact/";
 
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,6 +12,8 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Image from 'react-bootstrap/Image'
+import Dropdown from 'react-bootstrap/Dropdown'
+import "../styles/layout.css";
 
 // import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 // import DropdownButton from 'react-bootstrap/DropdownButton';
@@ -18,11 +21,35 @@ import Image from 'react-bootstrap/Image'
 
 const eatZillaLogo = require('../images/eatZillaLogo.png');
 
+const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+    <a href="" ref={ref} onClick={e => {
+        e.preventDefault();
+        onClick(e);
+    }}
+    >
+        {children}
+        &#x25bc;
+    </a>
+))
+
+const CustomMenu = React.forwardRef(
+({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
+const [value, setValue] = React.useState('');
+
+return (
+    <div ref={ref} style={style} className={className} aria-labelledby={labeledBy}>
+        <FormControl style={{width:'100%'}} autoFocus placeholder="Search..." onChange={e => setValue(e.target.value)} value={value} />
+        {/* <ul className="list-unstyled">{React.Children.toArray</ul> */}
+    </div>
+)
+}
+)
+
 const Header = () => {
     return (
         <Row className="headerRow">
-            <Col className="headerCol">
-                <Navbar bg="light" expand="lg">
+            <Col className="headerCol" style={{ padding:'0' }}>
+                <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
 
                     {/* <Col xs={{ order: 1 }} id="hello" className="justify-content-md-start" style={{ color: 'green' }}><Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav" className="NavBarCollapse">
@@ -44,11 +71,20 @@ const Header = () => {
                         </Navbar.Collapse>
                     </Col> */}
 
-                    <Col xs={{ order: 1 }} style={{ color: 'rgb(217,186,61)', width: '200px'}}><GiHamburgerMenu></GiHamburgerMenu></Col>
-                    <Col xs={{ order: 2 }}><Image src={eatZillaLogo} style={{ width: '100px' }} /></Col>
-                    <Col xs={{ order: 3 }} style={{ width: '200px', fontSize: '2rem' }}><MdSearch></MdSearch></Col>
+                    <GiHamburgerMenu className="ml-3" style={{ height: '30px', width: '30px', color: 'rgb(217,186,61)' }}></GiHamburgerMenu>
+                    
+                    <Image src={eatZillaLogo} style={{ width: '40%', padding: '0' }} />
+                    
+                    <Dropdown drop='bottom'>
+                        <Dropdown.Toggle as={CustomToggle}>
+                            <MdSearch style={{ width: '40px', fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu as={CustomMenu}></Dropdown.Menu>
+                    </Dropdown>
+                    <Button className="logInButton mr-3" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
 
-                    <Col xs={{ order: 4 }} className="justify-content-md-end" style={{ width: '100px', padding: '0px' }}><Button>Log In</Button></Col>
+
+
 
                 </Navbar>
             </Col>
