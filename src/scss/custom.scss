@@ -34,7 +34,7 @@
 .figures{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    justify-content: center;
 }
 
  .card {
@@ -68,4 +68,19 @@
         align-self: center;
         margin: 6em;
        }
+ }
+ @media (max-width: 420px){
+    .figures{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .card{
+        width: 100vw;
+    }
+    .right{
+        width: 100vw;
+    }
+    .top{
+        width: 100vw;
+    }
  }
