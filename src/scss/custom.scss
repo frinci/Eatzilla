@@ -61,7 +61,7 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 50;
-    width: 100vw;
+    width: 100%;
 }
 
 .figures{
@@ -161,10 +161,10 @@
 
      
  .top{
-     width: 100vw;
+     width: 100%;
      position: relative;
      .card-imgtop{
-     width: 100vw; 
+     width: 100%; 
     }
     .card-texttop {
         position: absolute;
@@ -200,7 +200,12 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
 }
-
+.navItems .navParent li {
+    list-style-type: none;
+    margin: .25em;
+    font-size: 15px;
+    margin-left: 15px;
+}
 @media(min-width: 850px) {
     .deliveryPartners {
         display: none;
@@ -241,17 +246,11 @@
     .searchIcon {
         margin-right: 4em;
     }
+    .aboutText{
+        width: 100vw;
+    }
 
 }
-
-// @media(min-width: 600px) {
-//     .desktopHeader {
-//         display: none;
-//     }
-//     .headerRow {
-//         display: block;
-//     }
-// }
 
 @media(max-width: 420px){
     .figures{
