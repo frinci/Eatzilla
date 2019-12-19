@@ -75,11 +75,17 @@
     justify-content: center;
     width: 100vw;
 }
+.figuresTwo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100vw;
+}
 
 .card {
      margin: 10px;
      position: relative;
-    width: 33em;
+    width: 43.5em;
      .card-text {
     
      position: absolute;
@@ -211,11 +217,22 @@
     font-size: 15px;
     margin-left: 15px;
 }
+@media(max-width: 700px){
+    .figuresThree{
+        display: block;
+
+    }
+    .figuresTwo{
+        display: none;
+    }
+}
 @media(min-width: 850px) {
     .deliveryPartners {
         display: none;
     }
-
+    .figuresThree{
+        display: none;
+    }
     .headerRow {
         display: none;
     }
@@ -255,12 +272,14 @@
     .aboutText{
         width: 100vw;
     }
+    
 
 }
 
 @media(min-width: 600px) {
     .desktopHeader {
         display: block;
+        width: 100vw;
     }
     .navParent {
         display: flex;
@@ -269,10 +288,12 @@
     .headerRow {
         display: none;
     }
+
 }
 @media(max-width: 1000px){
     .navbar {
         flex-wrap: nowrap !important;
+        width: 100vw;
     }
 }
 
@@ -290,6 +311,13 @@
     }
     .headerRow {
         display: block;
+    }
+    .figuresThree{
+        display: block;
+
+    }
+    .figuresTwo{
+        display: none;
     }
 }
 
