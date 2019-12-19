@@ -14,9 +14,26 @@ h3 {
     height: 114px
   }
 
+  .loremParagraph {
+      max-width: 500px;
+      margin: 0 auto;
 
-  @media(min-width: 750px) {
+  }
+
+  .copyright {
+      margin: 20px;
+  }
+  
+  .aboutText {
+      display: none;
+  }
+
+
+  @media(min-width: 850px) {
     .responsiveDelivery {
         display: inline-block;
+    }
+    .aboutText {
+        display: block
     }
   }
