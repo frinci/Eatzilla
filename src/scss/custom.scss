@@ -6,10 +6,20 @@
     font-weight: 700;
     text-align: center;
     width: 100vw;
+    margin-left: -5%;
+    margin-bottom: 10px;
+}
+
+.deliveryPartners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateX(10%);
+
 }
 
 .caroselItem {
-    margin-bottom: 15px
+    margin-bottom: 10px;
 }
 
 .caroselImg {
@@ -20,24 +30,18 @@
 .carouselDivider {
     width: 35%;
     margin-top: 10px;
-    margin-bottom: 25x;
 }
 
 .carouselLogo {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
 
 .carouselEatZillalogo {
-    // margin-left: 25%;
     height: 80px;
     margin-bottom: 15px;
 }
-
-// .carouselEatZillalogo img {
-//     margin-left: auto;
-//     margin-right: auto;
-// }
 
 .loremParagraph {
     max-width: 500px;
@@ -233,6 +237,7 @@
     .figuresThree{
         display: none;
     }
+
     .headerRow {
         display: none;
     }
@@ -241,7 +246,6 @@
         // display: flex;
         width: 100vw;
     }
-
     .navParent{
         display: flex;
         // border: 2px solid red;
@@ -257,7 +261,7 @@
         font-size: 15px;
         margin-left: 15px;
     }
-
+​
     .navSearch {
         display:flex;
         justify-content: flex-end;
@@ -269,17 +273,31 @@
     .searchIcon {
         margin-right: 4em;
     }
-    .aboutText{
-        width: 100vw;
-    }
-    
+}
 
+@media(min-width: 600px) {
+    .desktopHeader {
+        display: block
+    }
+    .navParent {
+        display: flex;
+        list-style-type: none;
+    }
+    .headerRow {
+        display: none
+    }
+}
+
+@media(max-width: 1000px){
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
 }
 
 @media(min-width: 600px) {
     .desktopHeader {
         display: block;
-        width: 100vw;
+
     }
     .navParent {
         display: flex;
