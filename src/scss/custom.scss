@@ -119,7 +119,7 @@
  .logInButton {
      border: 0;
  }
-}
+
      
  .top{
      width: 100vw;
@@ -140,7 +140,53 @@
     .deliveryPartners {
         display: none;
     }
+
+    .headerRow {
+        display: none;
+    }
+    .desktopHeader {
+        display: block;
+        display: flex;
+    }
+    .navParent{
+        display: flex;
+        // border: 2px solid red;
+        width: 125%;
+        justify-content: space-between;
+        margin-top: 20px;
+       font-family: "raleway";
+       font-style: bold;
+    } 
+    .navItems .navParent li {
+        list-style-type: none;
+        margin: .25em;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .navSearch {
+        display:flex;
+        justify-content: flex-end;
+        // border: 2px solid red;
+        width: 35%;
+        margin: 2em;
+    }
+   
+    .searchIcon {
+        margin-right: 4em;
+    }
+
 }
+
+// @media(min-width: 600px) {
+//     .desktopHeader {
+//         display: none;
+//     }
+//     .headerRow {
+//         display: block;
+//     }
+// }
+
 @media(max-width: 420px){
     .figures{
         display: flex;
@@ -149,5 +195,11 @@
     .card{
         width: 100vw;
         margin: auto;
+    }
+    .desktopHeader {
+        display: none;
+    }
+    .headerRow {
+        display: block;
     }
 }
