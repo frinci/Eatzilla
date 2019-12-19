@@ -40,6 +40,17 @@
     margin-bottom: 15px
 }
 
+.transparentBox {
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+
 .figures{
     display: flex;
     flex-wrap: wrap;
@@ -87,6 +98,32 @@
         align-self: center;
         margin: 6em;
     }
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: relative;
+    bottom: -270px;
+    margin-right: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.headerSubtitle {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: right;
+    position: relative;
+    bottom: -270px;
+    margin-right: 55px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 @media(min-width: 850px) {
