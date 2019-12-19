@@ -29,69 +29,69 @@ const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
 ))
 
 const CustomMenu = React.forwardRef(
-({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
-const [value, setValue] = React.useState('');
+    ({ children, style, className, 'aria-labelledby': labeledBy }, ref) => {
+        const [value, setValue] = React.useState('');
 
-return (
-    <div ref={ref} style={style} className={className} aria-labelledby={labeledBy}>
-        <FormControl style={{width:'100%'}} autoFocus placeholder="Search..." onChange={e => setValue(e.target.value)} value={value} />
-    </div>
-)
-}
+        return (
+            <div ref={ref} style={style} className={className} aria-labelledby={labeledBy}>
+                <FormControl style={{ width: '100%' }} autoFocus placeholder="Search..." onChange={e => setValue(e.target.value)} value={value} />
+            </div>
+        )
+    }
 )
 
 const Header = () => {
     return (
         <>
-        <Row className="headerRow">
-            <Col className="headerCol" style={{ padding:'0' }}>
-                <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
+            <Row className="headerRow">
+                <Col className="headerCol" style={{ padding: '0' }}>
+                    <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
 
-                    <GiHamburgerMenu className="ml-3" style={{ height: '30px', width: '30px', color: 'rgb(217,186,61)' }}></GiHamburgerMenu>
-                    
-                    <Image src={eatZillaLogo} style={{ width: '40%', padding: '0' }} />
-                    
-                    <Dropdown drop='bottom'>
-                        <Dropdown.Toggle as={CustomToggle}>
-                            <MdSearch style={{  fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu as={CustomMenu} style={{minWidth: '23.3rem', position: 'absolute', left: '16px' }}></Dropdown.Menu>
-                    </Dropdown>
-                    <Button className="logInButton mr-3" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
+                        <GiHamburgerMenu className="ml-3" style={{ height: '30px', width: '30px', color: 'rgb(217,186,61)' }}></GiHamburgerMenu>
 
-                </Navbar>
-            </Col>
-        </Row>
-        <Row className='desktopHeader'>
-        <Col className="headerCol" style={{ padding:'0' }}>
-                <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
+                        <Image src={eatZillaLogo} style={{ width: '40%', padding: '0' }} />
 
-                <Image src={eatZillaLogo} style={{ width: '20%', padding: '0' }} />
+                        <Dropdown drop='bottom'>
+                            <Dropdown.Toggle as={CustomToggle}>
+                                <MdSearch style={{ fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
+                            </Dropdown.Toggle>
+                            <Dropdown.Menu as={CustomMenu} style={{ minWidth: '23.3rem', position: 'absolute', left: '16px' }}></Dropdown.Menu>
+                        </Dropdown>
+                        <Button className="logInButton mr-3" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
 
-                <div className="navItems">
-                        <ul className="navParent">
-                            <li>All Recipes</li>
-                            <li>Meat Dishes</li>
-                            <li>Vegetarian and Vegan</li>
-                            <li>Gluten Free</li>
-                            <li>How it works</li>
-                        </ul>
-                    </div>
-                    
-                    <div className="navSearch">
-                    <Dropdown className="searchIcon" drop='bottom'>
-                        <Dropdown.Toggle as={CustomToggle} >
-                            <MdSearch style={{ width: '40px', fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
-                        </Dropdown.Toggle>
-                        <Dropdown.Menu as={CustomMenu} style={{ backgroundColor: 'rgb(146, 191, 72)', minWidth: '30rem', position: 'absolute', right: '20px', left: '500px', bottom: '10px', height: '14vh' }}></Dropdown.Menu>
-                    </Dropdown>
+                    </Navbar>
+                </Col>
+            </Row>
+            <Row className='desktopHeader'>
+                <Col className="headerCol" style={{ padding: '0' }}>
+                    <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
 
-                    <Button className="logInButton" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
-                    </div>
-                    
-                </Navbar>
-            </Col>
-        </Row>
+                        <Image src={eatZillaLogo} style={{ width: '20%', padding: '0' }} />
+
+                        <div className="navItems">
+                            <ul className="navParent">
+                                <li>All Recipes</li>
+                                <li>Meat Dishes</li>
+                                <li>Vegetarian and Vegan</li>
+                                <li>Gluten Free</li>
+                                <li>How it works</li>
+                            </ul>
+                        </div>
+
+                        <div className="navSearch">
+                            <Dropdown className="searchIcon" drop='bottom'>
+                                <Dropdown.Toggle as={CustomToggle} >
+                                    <MdSearch style={{ width: '40px', fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu as={CustomMenu} style={{ backgroundColor: 'rgb(146, 191, 72)', minWidth: '30rem', position: 'absolute', right: '20px', left: '500px', bottom: '10px', height: '14vh' }}></Dropdown.Menu>
+                            </Dropdown>
+
+                            <Button className="logInButton" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
+                        </div>
+
+                    </Navbar>
+                </Col>
+            </Row>
         </>
     )
 }
