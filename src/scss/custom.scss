@@ -6,16 +6,20 @@
     font-weight: 700;
     text-align: center;
     width: 100vw;
+    margin-left: -5%;
+    margin-bottom: 10px;
 }
 
-// .deliveryPartners {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-// }
+.deliveryPartners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform:translateX(10%);
+
+}
 
 .caroselItem {
-    margin-bottom: 15px
+    margin-bottom: 10px;
 }
 
 .caroselImg {
@@ -26,10 +30,10 @@
 .carouselDivider {
     width: 35%;
     margin-top: 10px;
-    margin-bottom: 25x;
 }
 
 .carouselLogo {
+    margin-top: 15px;
     display: flex;
     justify-content: center;
 }
@@ -224,7 +228,6 @@
         // display: flex;
         width: 100vw;
     }
-​
     .navParent{
         display: flex;
         // border: 2px solid red;
@@ -273,7 +276,42 @@
     }
 }
 
+@media(min-width: 600px) {
+    .desktopHeader {
+        display:block;
+    }
+    .navParent {
+        display: flex;
+        list-style-type: none;
+    }
+    .headerRow {
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+}
+
 @media(max-width: 600px){
+    .figures{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 40em;
+        margin: auto;
+    }
+    .desktopHeader {
+        display: none;
+    }
+    .headerRow {
+        display: block;
+    }
+}
+
+@media(max-width: 420px){
     .figures{
         display: flex;
         flex-direction: column;
