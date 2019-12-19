@@ -40,7 +40,7 @@
 .card {
      margin: 10px;
      position: relative;
-    width: 40%;
+    width: 33em;
      .card-text {
     
      position: absolute;
@@ -55,24 +55,29 @@
 }
 .card-info{
     position: absolute;
-    margin-top: 38%;
+    margin-top: 11em;
     background-color: rgba(0,0,0,0.5);
     color: white;
 }
 .card-info.right{
     right: 0;
+    margin-top: 11em;
 }
 .recipes{
-    width: 33%;
+    width: 12em;
 }
 .meat{
-    width: 40%;
+    right: 0;
+    width: 8em;
+    margin-top: 4em;
 }
 .veggie{
-    width: 46%;
+    width: 16.5em;
 }
 .gluten{
-    width: 40%;
+    right: 0;
+    width: 8em;
+    margin-top: 4em;
 }
 .try {
     display: flex;
@@ -108,8 +113,8 @@
     
 }
 
-.right {
-    width: 40%;
+.card .right {
+    width: 16em;
     .card-text {
         right: 0;
         margin-top: 4em;
@@ -193,7 +198,7 @@
         flex-direction: column;
     }
     .card{
-        width: 100vw;
+        width: 40em;
         margin: auto;
     }
     .desktopHeader {
