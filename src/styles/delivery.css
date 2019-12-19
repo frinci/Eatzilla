@@ -14,10 +14,15 @@ h3 {
     height: 114px
   }
 
-  .carouselEatZillalogo {
+  .aboutLogo {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* .carouselEatZillalogo {
     margin-left: 50%;
     margin-right: 50%;
-  }
+  } */
 
   .loremParagraph {
       max-width: 500px;
