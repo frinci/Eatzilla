@@ -13,7 +13,12 @@ import Figure from 'react-bootstrap/Figure'
 const FiguresOne = () => {
     return (
         <div className='figures'>
+
             <Figure className='card top'>
+            <div className='transparentBox'>
+                <h1 className='headerTitle'>GET IT TODAY</h1>
+                <h3 className='headerSubtitle'>Fresh ingredients for your meals <br></br>delivered to you by 6PM, guaranteed!</h3>
+            </div>
                 <Figure.Image className='card-imgtop'
                     width={171}
                  
@@ -21,9 +26,7 @@ const FiguresOne = () => {
                     alt="gettoday"
                     src={getToday}
                 />
-                <Figure.Caption className='card-texttop'>
-                   Get It Today
-  </Figure.Caption>
+
   </Figure>
   <Figure className='card left'>
                 <Figure.Image className='card-img'

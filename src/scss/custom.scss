@@ -4,6 +4,7 @@
     color: #91c03e;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    text-align: center;
 }
 
 .caroselItem {
@@ -21,23 +22,44 @@
 }
 
 .carouselEatZillalogo {
+    margin-left: auto;
+    margin-right: auto;
     height: 80px;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+}
+
+.carouselEatZillalogo img {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .loremParagraph {
     max-width: 500px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .copyright {
     margin: 20px;
+    text-align: center;
 }
 
 .phoneNumber {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    margin-bottom: 15px
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.transparentBox {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 50;
 }
 
 .figures{
@@ -148,6 +170,32 @@
         align-self: center;
         margin: 6em;
     }
+}
+
+.headerTitle {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    position: relative;
+    bottom: -270px;
+    margin-right: 55px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+}
+
+.headerSubtitle {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    text-align: right;
+    position: relative;
+    bottom: -270px;
+    margin-right: 55px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 
 @media(min-width: 850px) {

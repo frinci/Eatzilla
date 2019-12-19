@@ -9,6 +9,7 @@ import './scss/custom.scss'
 import FiguresOne from './screens/FiguresOne'
 import FiguresTwo from './screens/FiguresTwo'
 import DeliveryPartners from './screens/DeliveryPartners'
+import Container from 'react-bootstrap/container';
 import AboutText from './screens/AboutText'
 
 function App() {

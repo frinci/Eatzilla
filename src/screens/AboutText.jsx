@@ -1,5 +1,6 @@
 import React from 'react'
 import eatZillaLogo from '../images/eatZillaLogo.png'
+import '../styles/delivery.css'
 
 const AboutText = () => {
     return (
