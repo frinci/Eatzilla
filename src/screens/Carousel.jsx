@@ -11,8 +11,8 @@ const CarouselContainer = () => {
   return (
 
     <div className='deliveryPartners'>
+      <h3 className='deliveryTitle'>DELIVERY PARTNERS</h3>
       <Carousel style={{ height: '150px' }}>
-        <h3 className='deliveryTitle'>DELIVERY PARTNERS</h3>
         <Carousel.Item className='caroselItem'>
           <img
             className="caroselImg"
