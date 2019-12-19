@@ -39,6 +39,8 @@ const DeliveryPartners = () => {
                 alt="keyfoods logo"
             />
 
+            <hr className='carouselDivider' />
+
         </div>
     )
 }
