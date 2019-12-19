@@ -8,6 +8,12 @@
     width: 100vw;
 }
 
+// .deliveryPartners {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
 .caroselItem {
     margin-bottom: 15px
 }
@@ -29,15 +35,9 @@
 }
 
 .carouselEatZillalogo {
-    // margin-left: 25%;
     height: 80px;
     margin-bottom: 15px;
 }
-
-// .carouselEatZillalogo img {
-//     margin-left: auto;
-//     margin-right: auto;
-// }
 
 .loremParagraph {
     max-width: 500px;
@@ -215,15 +215,16 @@
     .deliveryPartners {
         display: none;
     }
-
+​
     .headerRow {
         display: none;
     }
     .desktopHeader {
         display: block;
-        display: flex;
+        // display: flex;
         width: 100vw;
     }
+​
     .navParent{
         display: flex;
         // border: 2px solid red;
@@ -239,7 +240,7 @@
         font-size: 15px;
         margin-left: 15px;
     }
-
+​
     .navSearch {
         display:flex;
         justify-content: flex-end;
@@ -251,13 +252,28 @@
     .searchIcon {
         margin-right: 4em;
     }
-    .aboutText{
-        width: 100vw;
-    }
-
 }
 
-@media(max-width: 420px){
+@media(min-width: 600px) {
+    .desktopHeader {
+        display: block
+    }
+    .navParent {
+        display: flex;
+        list-style-type: none;
+    }
+    .headerRow {
+        display: none
+    }
+}
+
+@media(max-width: 1000px){
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+}
+
+@media(max-width: 600px){
     .figures{
         display: flex;
         flex-direction: column;
