@@ -11,6 +11,7 @@ import FiguresTwo from './screens/FiguresTwo'
 import DeliveryPartners from './screens/DeliveryPartners'
 import Container from 'react-bootstrap/container';
 import AboutText from './screens/AboutText'
+import FiguresThree from './screens/FiguresThree'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
       <Header/>
       <FiguresOne/>
+      <FiguresThree/>
       <DeliveryPartners/>
       <CarouselContainer />
       <FiguresTwo/>

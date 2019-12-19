@@ -9,9 +9,9 @@ import Figure from 'react-bootstrap/Figure'
 
 
 
-const FiguresTwo = () => {
+const FiguresThree = () => {
     return (
-        <div className='figuresTwo'>
+        <div className='figuresThree'>
   <Figure className='card try'>
                 <Figure.Image className='card-img'
                     width={171}
@@ -45,4 +45,4 @@ const FiguresTwo = () => {
 
 }
 
-export default FiguresTwo
+export default FiguresThree
