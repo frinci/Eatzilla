@@ -25,40 +25,6 @@ const FiguresOne = () => {
                    Get It Today
   </Figure.Caption>
   </Figure>
-            <Figure className='card left'>
-                <Figure.Image className='card-img'
-                    width={171}
-                 
-                    height={180}
-                    alt="meatlovers"
-                    src={meatlovers}
-                />
-                <Figure.Caption className='card-text'>
-                   Meat Lovers
-  </Figure.Caption>
-  </Figure>
-  <Figure className='card left'>
-                <Figure.Image className='card-img'
-                    width={171}
-                    height={180}
-                    alt="glutenfree"
-                    src={glutenfree}
-                />
-                <Figure.Caption className='card-text'>
-                    Gluten Free
-  </Figure.Caption>
-  </Figure>
-  <Figure className='card right'>
-                <Figure.Image className='card-img'
-                    width={171}
-                    height={180}
-                    alt="veggiefriendly"
-                    src={veggiefriendly}
-                />
-                <Figure.Caption className='card-text'>
-                    Veggie Friendly
-  </Figure.Caption>
-  </Figure>
   <Figure className='card left'>
                 <Figure.Image className='card-img'
                     width={171}
@@ -67,8 +33,54 @@ const FiguresOne = () => {
                     src={allRecipes}
                 />
                 <Figure.Caption className='card-text'>
-                    All Recipes
+                    ALL RECIPES
   </Figure.Caption>
+  <div className='card-info left recipes'>
+                    All your recipes in one spot by category.
+  </div>
+  </Figure>
+            <Figure className='card right'>
+                <Figure.Image className='card-img'
+                    width={171}
+                 
+                    height={180}
+                    alt="meatlovers"
+                    src={meatlovers}
+                />
+                <Figure.Caption className='card-text meat'>
+                   MEAT LOVERS
+  </Figure.Caption>
+  <div className='card-info right meat'>
+                    Chicken, beef, lamb, fish. We got it.
+  </div>
+  </Figure>
+  <Figure className='card left'>
+                <Figure.Image className='card-img'
+                    width={171}
+                    height={180}
+                    alt="veggiefriendly"
+                    src={veggiefriendly}
+                />
+                <Figure.Caption className='card-text'>
+                    VEGGIE FRIENDLY
+  </Figure.Caption>
+  <div className='card-info left veggie'>
+                    We got Vegetarian and Vegan recipes here.
+  </div>
+  </Figure>
+  <Figure className='card right'>
+                <Figure.Image className='card-img'
+                    width={171}
+                    height={180}
+                    alt="glutenfree"
+                    src={glutenfree}
+                />
+                <Figure.Caption className='card-text gluten'>
+                    GLUTEN FREE
+  </Figure.Caption>
+  <div className='card-info right gluten'>
+                    Recipes for those who can have gluten.
+  </div>
   </Figure>
         </div>
     )

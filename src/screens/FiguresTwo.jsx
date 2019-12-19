@@ -12,7 +12,7 @@ import Figure from 'react-bootstrap/Figure'
 const Figures = () => {
     return (
         <div className='figures'>
-  <Figure className='card right'>
+  <Figure className='card try'>
                 <Figure.Image className='card-img'
                     width={171}
                     height={180}
@@ -20,10 +20,13 @@ const Figures = () => {
                     src={giveUsATry}
                 />
                 <Figure.Caption className='card-text'>
-                    Give Us A Try
+                    GIVE US A TRY NOW!
   </Figure.Caption>
+  <div className='card-info trying'>
+                    Get a first order free on us with $40 to spend and see how our service works in your area
+  </div>
   </Figure>
-  <Figure className='card left'>
+  <Figure className='card member'>
                 <Figure.Image className='card-img'
                     width={171}
                     height={180}
@@ -31,8 +34,11 @@ const Figures = () => {
                     src={becomeMember}
                 />
                 <Figure.Caption className='card-text'>
-                    Become a Member
+                    BECOME A MEMBER
   </Figure.Caption>
+  <div className='card-info members'>
+                    Becoming a member saves you 15% on your orders your first 6 months with us and no membership fee for 6 months
+  </div>
             </Figure>
         </div>
     )

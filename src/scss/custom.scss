@@ -51,6 +51,7 @@
      position: relative;
     width: 40%;
      .card-text {
+    
      position: absolute;
      background-color: #91c03e;
      color: white;
@@ -61,11 +62,66 @@
         height: 100%;
     }
 }
+.card-info{
+    position: absolute;
+    margin-top: 38%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+.card-info.right{
+    right: 0;
+}
+.recipes{
+    width: 33%;
+}
+.meat{
+    width: 40%;
+}
+.veggie{
+    width: 46%;
+}
+.gluten{
+    width: 40%;
+}
+.try {
+    display: flex;
+}
+.try .card-text{
+    align-self: center;
+    width: 55%;
+    margin-top: 30%;
+    background-color: rgb(0,0,0);
+    
+}
+.trying{
+    align-self: center;
+    width: 55%;
+}
+.member {
+    display: flex;
+}
+.member .card-text{
+    width: 55%;
+    align-self: center;
+    margin-top: 30%;
+    background: #ffd200;
+    color: black;
+
+}
+.members{
+    align-self: center;
+    width: 55%; 
+}
+.left .card-text {
+        margin-top: 30%;
+    
+}
 
 .right {
     width: 40%;
     .card-text {
         right: 0;
+        margin-top: 30%;
     }
  }
 
@@ -93,7 +149,52 @@
     .deliveryPartners {
         display: none;
     }
+
+    .headerRow {
+        display: none;
+    }
+    .desktopHeader {
+        display: block;
+        display: flex;
+    }
+    .navParent{
+        display: flex;
+        // border: 2px solid red;
+        width: 125%;
+        justify-content: space-between;
+        margin-top: 20px;
+       font-family: "raleway";
+       font-weight: bold;
+    } 
+    .navItems .navParent li {
+        list-style-type: none;
+        margin: .25em;
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    .navSearch {
+        display:flex;
+        justify-content: flex-end;
+        // border: 2px solid red;
+        width: 35%;
+        margin: 2em;
+    }
+   
+    .searchIcon {
+        margin-right: 4em;
+    }
+
 }
+
+// @media(min-width: 600px) {
+//     .desktopHeader {
+//         display: none;
+//     }
+//     .headerRow {
+//         display: block;
+//     }
+// }
 
 @media(max-width: 420px){
     .figures{
@@ -103,5 +204,11 @@
     .card{
         width: 100vw;
         margin: auto;
+    }
+    .desktopHeader {
+        display: none;
+    }
+    .headerRow {
+        display: block;
     }
 }
