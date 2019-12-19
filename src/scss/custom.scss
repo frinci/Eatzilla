@@ -61,7 +61,7 @@
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
     z-index: 50;
-    width: 100vw;
+    width: 100%;
 }
 
 .figures{
@@ -211,9 +211,10 @@
     }
     .desktopHeader {
         display: block;
-        display: flex;
+        // display: flex;
         width: 100vw;
     }
+
     .navParent{
         display: flex;
         // border: 2px solid red;
@@ -244,16 +245,24 @@
 
 }
 
-// @media(min-width: 600px) {
-//     .desktopHeader {
-//         display: none;
-//     }
-//     .headerRow {
-//         display: block;
-//     }
-// }
-
-@media(max-width: 420px){
+@media(min-width: 600px) {
+    .desktopHeader {
+        display: block;
+    }
+    .navParent {
+        display: flex;
+        list-style-type: none;
+    }
+    .headerRow {
+        display: none;
+    }
+}
+@media(max-width: 1000px){
+    .navbar {
+        flex-wrap: nowrap !important;
+    }
+}
+@media(max-width: 600px){
     .figures{
         display: flex;
         flex-direction: column;
