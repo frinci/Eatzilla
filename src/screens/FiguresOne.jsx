@@ -35,7 +35,7 @@ const FiguresOne = () => {
                     alt="allrecipes"
                     src={allRecipes}
                 />
-                <Figure.Caption className='card-text'>
+                <Figure.Caption className='card-text recipe'>
                     ALL RECIPES
   </Figure.Caption>
   <div className='card-info left recipes'>
@@ -53,7 +53,7 @@ const FiguresOne = () => {
                 <Figure.Caption className='card-text meat'>
                    MEAT LOVERS
   </Figure.Caption>
-  <div className='card-info right meat'>
+  <div className='card-info right meats'>
                     Chicken, beef, lamb, fish. We got it.
   </div>
   </Figure>
@@ -81,7 +81,7 @@ const FiguresOne = () => {
                 <Figure.Caption className='card-text gluten'>
                     GLUTEN FREE
   </Figure.Caption>
-  <div className='card-info right gluten'>
+  <div className='card-info right glutens'>
                     Recipes for those who can have gluten.
   </div>
   </Figure>

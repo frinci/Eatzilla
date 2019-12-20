@@ -45,7 +45,7 @@ const Header = () => {
         <>
             <Row className="headerRow">
                 <Col className="headerCol" style={{ padding: '0' }}>
-                    <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
+                    <Navbar bg="light" expand="lg" style={{ padding: '0', margin: '0' }}>
 
                         <GiHamburgerMenu className="ml-3" style={{ height: '30px', width: '30px', color: 'rgb(217,186,61)' }}></GiHamburgerMenu>
 
@@ -64,7 +64,7 @@ const Header = () => {
             </Row>
             <Row className='desktopHeader'>
                 <Col className="headerCol" style={{ padding: '0' }}>
-                    <Navbar bg="light" expand="lg" style={{ padding: '0' }}>
+                    <Navbar bg="light" expand="lg" style={{ padding: '0', margin: '0', width: '105%'}}>
 
                         <Image src={eatZillaLogo} style={{ width: '20%', padding: '0' }} />
 
@@ -75,9 +75,20 @@ const Header = () => {
                                 <li>Vegetarian and Vegan</li>
                                 <li>Gluten Free</li>
                                 <li>How it works</li>
-                            </ul>
-                        </div>
 
+                        <div className="navSearch">
+                            <Dropdown className="searchIcon" drop='bottom'>
+                                <Dropdown.Toggle as={CustomToggle} >
+                                    <MdSearch style={{ width: '40px', fontSize: '2rem', padding: '0', color: 'rgb(196, 220, 153)' }}></MdSearch>
+                                </Dropdown.Toggle>
+                                <Dropdown.Menu as={CustomMenu} style={{ backgroundColor: 'rgba(0, 0, 0,0.25)', minWidth: '30rem', position: 'absolute', right: '20px', left: '500px', bottom: '10px', height: '14vh' }}></Dropdown.Menu>
+                                <Button className="logInButton" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>                            
+                            </Dropdown>
+                        </div>
+                            </ul>
+                            
+                        </div>
+{/* 
                         <div className="navSearch">
                             <Dropdown className="searchIcon" drop='bottom'>
                                 <Dropdown.Toggle as={CustomToggle} >
@@ -87,7 +98,7 @@ const Header = () => {
                             </Dropdown>
 
                             <Button className="logInButton" style={{ width: '60px', padding: '0px', height: '30px', backgroundColor: 'rgb(217,186,61)', color: 'black' }}>Log In</Button>
-                        </div>
+                        </div> */}
 
                     </Navbar>
                 </Col>
