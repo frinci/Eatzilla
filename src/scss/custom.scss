@@ -1,5 +1,4 @@
 @import "~bootstrap/scss/bootstrap";
-
 .deliveryTitle {
     color: #91c03e;
     font-family: 'Open Sans', sans-serif;
@@ -91,12 +90,12 @@
      position: relative;
     width: 43.5em;
      .card-text {
-    
-     position: absolute;
+    margin-top: 4.9em;
+    position: absolute;
      background-color: #91c03e;
      color: white;
      font-size: 150%;
-     padding: .25em;
+     padding: .5em;
      font-weight: bold;
     }
     .card-img{
@@ -105,30 +104,37 @@
     }
 }
 .card-info{
+    width: 33em;
     position: absolute;
-    margin-top: 9em;
+    margin-top: 11em;
     background-color: rgba(0,0,0,0.5);
     color: white;
+    padding: 1.5em;
 }
 .card-info.right{
     right: 0;
-    margin-top: 9em;
+    margin-top: 11em;
 }
 .recipes{
-    width: 10.25em;
+    width: 14em;
+}
+.recipe{
+    width: 9.30em;
 }
 .meat{
     right: 0;
     width: 10.75em;
     margin-top: 4em;
+    text-align: center;
 }
 .veggie{
-    width: 13.75em;
+    width: 14.55em;
 }
 .gluten{
     right: 0;
     width: 10.65em;
     margin-top: 4em;
+    text-align: center;
 }
 .try {
     display: flex;
@@ -136,8 +142,9 @@
 .try .card-text{
     align-self: center;
     width: 12em;
-    margin-top: 4em;
+    margin-top: 4.8em;
     background-color: rgb(0,0,0);
+    text-align: center;
     
 }
 .trying{
@@ -150,9 +157,10 @@
 .member .card-text{
     width: 13.25em;
     align-self: center;
-    margin-top: 4em;
+    margin-top: 4.8em;
     background: #ffd200;
     color: black;
+    text-align: center;
 
 }
 .members{
@@ -160,7 +168,7 @@
     width: 20em; 
 }
 .left .card-text {
-        margin-top: 4em;
+        margin-top: 4.9em;
     
 }
 
@@ -168,7 +176,7 @@
     width: 16em;
     .card-text {
         right: 0;
-        margin-top: 4em;
+        text-align: center;
     }
  }
 
@@ -179,9 +187,11 @@
      
  .top{
      width: 100%;
+     height: 50%;
      position: relative;
      .card-imgtop{
      width: 100%; 
+     height: 50%;
     }
     .card-texttop {
         position: absolute;
@@ -249,7 +259,12 @@
     .desktopHeader {
         display: block;
         // display: flex;
-        width: 100vw;
+        // width: 150%;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+
+
     }
     .navParent{
         display: flex;
@@ -260,6 +275,9 @@
        font-family: "raleway";
        font-weight: bold;
     } 
+    .navItems{
+        margin-left: 14em;
+    }
     .navItems .navParent li {
         list-style-type: none;
         margin: .25em;
@@ -272,23 +290,13 @@
         justify-content: space-between;
         width: 35%;
         margin: 2em;
+        padding-left: 20%;
     }
-   
-    .searchIcon {
-        margin-right: 4em;
-    }
-}
-
-@media(min-width: 600px) {
-    .desktopHeader {
-        display: block
-    }
-    .navParent {
-        display: flex;
-        list-style-type: none;
-    }
-    .headerRow {
-        display: none
+    .searchIcon .show{
+        margin: 0 auto;
+        margin-right: 25%;
+        margin-top: 2%;
+        width: 50%;
     }
 }
 
@@ -301,6 +309,7 @@
 @media(min-width: 600px) {
     .desktopHeader {
         display: block;
+        width: 100vw;
 
     }
     .navParent {
@@ -323,6 +332,7 @@
     .figures{
         display: flex;
         flex-direction: column;
+        width: 100vw;
     }
     .card{
         width: 40em;
@@ -333,6 +343,7 @@
     }
     .headerRow {
         display: block;
+        width: 100vw;
     }
     .figuresThree{
         display: block;
