@@ -95,7 +95,9 @@
      position: absolute;
      background-color: #91c03e;
      color: white;
-     font-size: 200%;
+     font-size: 150%;
+     padding: .25em;
+     font-weight: bold;
     }
     .card-img{
         width: 100%;
@@ -104,28 +106,28 @@
 }
 .card-info{
     position: absolute;
-    margin-top: 11em;
+    margin-top: 9em;
     background-color: rgba(0,0,0,0.5);
     color: white;
 }
 .card-info.right{
     right: 0;
-    margin-top: 11em;
+    margin-top: 9em;
 }
 .recipes{
-    width: 12em;
+    width: 10.25em;
 }
 .meat{
     right: 0;
-    width: 8em;
+    width: 10.75em;
     margin-top: 4em;
 }
 .veggie{
-    width: 16.5em;
+    width: 13.75em;
 }
 .gluten{
     right: 0;
-    width: 8em;
+    width: 10.65em;
     margin-top: 4em;
 }
 .try {
@@ -133,20 +135,20 @@
 }
 .try .card-text{
     align-self: center;
-    width: 10em;
+    width: 12em;
     margin-top: 4em;
     background-color: rgb(0,0,0);
     
 }
 .trying{
     align-self: center;
-    width: 20em;
+    width: 18em;
 }
 .member {
     display: flex;
 }
 .member .card-text{
-    width: 10em;
+    width: 13.25em;
     align-self: center;
     margin-top: 4em;
     background: #ffd200;
@@ -221,6 +223,9 @@
     font-size: 15px;
     margin-left: 15px;
 }
+.aboutText{
+    width: 100vw;
+}
 @media(max-width: 700px){
     .figuresThree{
         display: block;
@@ -264,8 +269,7 @@
 ​
     .navSearch {
         display:flex;
-        justify-content: flex-end;
-        // border: 2px solid red;
+        justify-content: space-between;
         width: 35%;
         margin: 2em;
     }
